@@ -1,7 +1,7 @@
 import StepsHeader from './StepsHeader'
 import ProductsList from './ProductsList'
 import { useEffect, useState } from 'react'
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { OrderLocationData, Product } from './types'
 import { fetchProducts, saveOrder } from '../api'
 import OrderLocation from './OrderLocation'
