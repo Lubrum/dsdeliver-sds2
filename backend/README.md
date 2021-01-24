@@ -10,10 +10,6 @@ Tecnologia utilizada:
 
 # Pré-requisitos
 
-## Instalação das ferramentas no Linux (Ubuntu/Debian)
-
-## Ferramentas:
-
 - Java JDK 11
 - Maven (Gerenciamento de dependências)
 - STS (IDE para desenvolvimento)
@@ -21,10 +17,12 @@ Tecnologia utilizada:
 - Postgresql e pgAdmin (Banco de dados SQL e UI para postgres)
 - Heroku CLI
 
-## Modelo conceitual
+
+# Modelo conceitual
 
 ![Image](https://raw.githubusercontent.com/Lubrum/dsdeliver-sds2/master/assets/modelo-conceitual.png "Modelo conceitual")
 
-## Arquitetura
+
+# Arquitetura
 
 ![Image](https://raw.githubusercontent.com/Lubrum/dsdeliver-sds2/master/assets/camadas.png "Padrão camadas")
