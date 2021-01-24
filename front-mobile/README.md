@@ -52,3 +52,7 @@ npm install dayjs --save
 npm install intl
 ```
 
+# Execução
+```bash
+npm start
+```
