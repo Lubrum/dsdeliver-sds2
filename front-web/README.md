@@ -44,3 +44,8 @@ npm install --save react-toastify
 ```bash 
 npm install axios
 ```
+
+# Execução (com npm)
+```bash 
+npm start
+```
