@@ -9,7 +9,7 @@ export default function Home() {
     const navigation = useNavigation();
 
     const handleOnPress = () => {
-        navigation.navigate('Orders')
+        navigation.navigate('Orders' as never)
     }
 
     return (

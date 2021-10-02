@@ -30,9 +30,9 @@ export default function Orders() {
     } , [isFocused]);
 
     const handleOnPress = (order: Order) => {
-        navigation.navigate('OrderDetails', {
+        navigation.navigate('OrderDetails' as never, {
            order
-        })
+        } as never)
     }
 
     return (

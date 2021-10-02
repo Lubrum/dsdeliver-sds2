@@ -11,7 +11,6 @@ export default function Routes() {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                headerMode="none"
                 screenOptions={{
                     cardStyle: {
                         backgroundColor: '#FFF'

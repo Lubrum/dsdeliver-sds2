@@ -21,14 +21,14 @@ export default function OrderDetails({route}: Props) {
     const navigation = useNavigation();
 
     const handleOnCancel = () => {
-        navigation.navigate('Orders')
+        navigation.navigate('Orders' as never)
     }
     
     const handleConfirmDelivery = () => {
         confirmDelivery(order.id)
             .then(() => {
                 Alert.alert(`Pedido ${order.id} confirmado com sucesso!`)
-                navigation.navigate('Orders');
+                navigation.navigate('Orders' as never);
             })
             .catch(() => {
                 Alert.alert(`Houve um erro ao confirmar o pedido ${order.id}`)
