@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       fontSize: 18,
       color: '#FFF',
-      letterSpacing: -0.24,
-      fontFamily: 'OpenSans_700Bold'
+      letterSpacing: -0.24
+      //fontFamily: 'OpenSans_700Bold'
     }
   });

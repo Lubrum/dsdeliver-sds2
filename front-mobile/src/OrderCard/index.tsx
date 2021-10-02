@@ -70,16 +70,16 @@ const styles = StyleSheet.create(
             fontSize: 14,
             lineHeight: 19,
             letterSpacing: -0.24,
-            color: '#9E9E9E',
-            fontFamily: 'OpenSans_400Regular'
+            color: '#9E9E9E'
+            //fontFamily: 'OpenSans_400Regular'
         },
         orderName: {
             fontWeight: 'bold',
             fontSize: 18,
             lineHeight: 25,
             letterSpacing: -0.24,
-            color: '#263238',
-            fontFamily: 'OpenSans_700Bold'
+            color: '#263238'
+            //fontFamily: 'OpenSans_700Bold'
         },
         orderPrice: {
             fontWeight: 'bold',
@@ -87,8 +87,8 @@ const styles = StyleSheet.create(
             lineHeight: 25,
             textAlign: 'right',
             letterSpacing: -0.24,
-            color: '#DA5C5C',
-            fontFamily: 'OpenSans_700Bold'
+            color: '#DA5C5C'
+            //fontFamily: 'OpenSans_700Bold'
         },
         productsList: {
             borderTopColor: '#E6E6E6',
