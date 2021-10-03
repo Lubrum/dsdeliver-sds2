@@ -30,6 +30,7 @@ npx create-react-app front-web --template typescript --use-npm
 # Instalação (com npm)
 
 ## Dependências do React
+
 ```bash 
 npm install react-router-dom
 npm install @types/react-router-dom
@@ -41,11 +42,19 @@ npm install --save react-toastify
 ```
 
 ## Dependências adicionais
+
 ```bash 
 npm install axios
 ```
 
 # Execução (com npm)
+
 ```bash 
 npm start
 ```
+
+# Deploy no Netlify
+
+[Tutorial passo a passo do deploy no Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
+
+Live link: https://sds2-luciano-brum.netlify.app/
