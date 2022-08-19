@@ -8,7 +8,7 @@ Adicionalmente, também foi desenvolvido um app para os entregadores das encomen
 
 Tecnologias utilizadas:
 
-- [Backend: Java, Spring Boot](https://github.com/Lubrum/dsdeliver-sds2/tree/main/backend)
+- [Backend: Java, Spring Boot](https://github.com/Lubrum/dsdeliver-sds-backend)
 
 - [Frontend: ReactJS](https://github.com/Lubrum/dsdeliver-sds2/tree/main/front-web)
 
@@ -22,7 +22,7 @@ Tecnologias utilizadas:
 
 - Curl
 - Git
-- Java JDK 11
+- Java JDK 17
 - Maven
 - STS
 - Postman
@@ -58,7 +58,7 @@ git
 
 - Instalar Java: 
 ```
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-17-jdk
 ```
 
 - Verificar a instalação: 
