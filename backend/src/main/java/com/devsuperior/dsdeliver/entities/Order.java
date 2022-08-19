@@ -1,5 +1,6 @@
 package com.devsuperior.dsdeliver.entities;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.HashSet;
@@ -18,6 +19,7 @@ import javax.persistence.Table;
 @Table(name = "tb_order")
 public class Order implements Serializable {
 
+	@Serial
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -34,7 +36,7 @@ public class Order implements Serializable {
 		joinColumns = @JoinColumn(name = "order_id"),
 		inverseJoinColumns = @JoinColumn(name = "product_id")
 	)
-	private Set <Product> products = new HashSet<>();
+	private final Set <Product> products = new HashSet<>();
 	
 	public Order() {
 	}
@@ -99,7 +101,7 @@ public class Order implements Serializable {
 
 	public Double getTotal() {
 		double sum = 0.0;
-		sum = products.stream().mapToDouble(x -> x.getPrice()).sum();
+		sum = products.stream().mapToDouble(Product::getPrice).sum();
 		return sum;
 	}
 	
@@ -125,11 +127,8 @@ public class Order implements Serializable {
 			return false;
 		Order other = (Order) obj;
 		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		return true;
+			return other.id == null;
+		} else return id.equals(other.id);
 	}
 	
 }

@@ -28,21 +28,30 @@ function OrderLocation({ onChangeLocation }: Props) {
         position: inicialPosition
     })
 
-    const loadOptions = async (inputValue: string, callback: (places: Place[]) => void) => {
-        const response = await fetchLocalMapBox(inputValue);
+    const loadOptions = (
+        inputValue: string, 
+        callback: (places: Place[]) => void
+    ) => {
+        if (!inputValue) {
+            return callback([]);
+        }
 
-        const places = response.data.features.map((item: any) => {
-            return ({
-                label: item.place_name,
-                value: item.place_name,
-                position: {
-                    lat: item.center[1],
-                    lng: item.center[0]
-                }
+        const fetchMapBox = (inputValue: string) => {
+            fetchLocalMapBox(inputValue).then(res => {
+                const places = res.data.features.map((item: any) => {
+                    return ({
+                        label: item.place_name,
+                        value: item.place_name,
+                        position: {
+                            lat: item.center[1],
+                            lng: item.center[0]
+                        }
+                    })
+                })
+                callback(places as Place[])
             })
-        })
-
-        callback(places)
+        }
+        fetchMapBox(inputValue)
     }
 
     const handleChangeSelect = (place: Place) => {
@@ -65,7 +74,9 @@ function OrderLocation({ onChangeLocation }: Props) {
                 <div className="filter-container">
                     <AsyncSelect placeholder="Digite um endereço para entregar o pedido"
                         className="filter"
+                        cacheOptions
                         loadOptions={loadOptions}
+                        defaultOptions
                         onChange={value => handleChangeSelect(value as Place)}
                     />
                 </div>

@@ -29,22 +29,10 @@ npx create-react-app front-web --template typescript --use-npm
 
 # Instalação (com npm)
 
-## Dependências do React
+## Dependências
 
 ```bash 
-npm install react-router-dom
-npm install @types/react-router-dom
-npm install react react-dom leaflet
-npm install react-leaflet
-npm install -D @types/leaflet
-npm install react-select @types/react-select
-npm install --save react-toastify
-```
-
-## Dependências adicionais
-
-```bash 
-npm install axios
+npm install
 ```
 
 # Execução (com npm)

@@ -1,5 +1,6 @@
 package com.devsuperior.dsdeliver.dto;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import com.devsuperior.dsdeliver.entities.OrderStatus;
 
 public class OrderDTO implements Serializable {
 
+	@Serial
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
@@ -44,7 +46,7 @@ public class OrderDTO implements Serializable {
 		moment = entity.getMoment();
 		status = entity.getStatus();
 		total = entity.getTotal();
-		products = entity.getProducts().stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
+		products = entity.getProducts().stream().map(ProductDTO::new).collect(Collectors.toList());
 	}
 
 	public Long getId() {
