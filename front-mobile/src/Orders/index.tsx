@@ -24,7 +24,7 @@ export default function Orders() {
     }
 
     useEffect(() => {
-        if(isFocused){
+        if (isFocused) {
             fetchData()
         }
     } , [isFocused]);
