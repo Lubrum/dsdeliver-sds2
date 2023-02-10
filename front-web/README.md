@@ -14,28 +14,19 @@ npx create-react-app front-web --template typescript --use-npm
 
 # Pré-requisitos
 
-## Instalação das seguintes ferramentas no Linux (Ubuntu/Debian)
-
-- react-router-dom
-- @types/react-router-dom
-- axios
-- react 
-- react-dom 
-- leaflet
-- react-leaflet
-- @types/leaflet
-- react-select @types/react-select
-- react-toastify
-
-# Instalação (com npm)
-
-## Dependências
+# Instalação de dependências (com npm)
 
 ```bash 
 npm install
 ```
 
 # Execução (com npm)
+
+Pré-requisito: arquivo .env na raíz do projeto com as seguintes variáveis de ambiente:
+
+- REACT_APP_ACCESS_TOKEN_MAP_BOX: token para acesso à api do Map Box, para o mapa da aplicação;
+
+- REACT_APP_API_URL: url de acesso ao backend deste serviço
 
 ```bash 
 npm start
