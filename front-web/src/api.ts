@@ -1,11 +1,12 @@
 import axios from "axios";
 import { OrderPayload } from "./Orders/types";
 
-const API_URL = process.env.REACT_APP_API_URL
+const PRODUCTS_URL = process.env.REACT_APP_API_PRODUCTS_URL
+const ORDERS_URL = process.env.REACT_APP_API_ORDERS_URL
 const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX
 
 export function fetchProducts() {
-    return axios(`${API_URL}/products`)
+    return axios(`${PRODUCTS_URL}`)
 }
 
 export function fetchLocalMapBox(local: string) {
@@ -13,5 +14,5 @@ export function fetchLocalMapBox(local: string) {
 }
 
 export function saveOrder(payload : OrderPayload) {
-    return axios.post(`${API_URL}/orders`, payload)
+    return axios.post(`${ORDERS_URL}`, payload)
 }
