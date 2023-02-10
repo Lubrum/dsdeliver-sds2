@@ -26,13 +26,19 @@ Pré-requisito: arquivo .env na raíz do projeto com as seguintes variáveis de 
 
 - REACT_APP_ACCESS_TOKEN_MAP_BOX: token para acesso à api do Map Box, para o mapa da aplicação;
 
-- REACT_APP_API_URL: url de acesso ao backend deste serviço
+- REACT_APP_API_URL: url do backend deste serviço;
+
+- REACT_APP_API_PRODUCTS_URL: path da api de obtenção da lista de produtos;
+
+- REACT_APP_API_ORDERS_URL: path api de geração de pedidos de produtos;
 
 ```bash 
 npm start
 ```
 
 # Deploy no Netlify
+
+O deploy do frontend é automático, a cada push feito no github.
 
 [Tutorial passo a passo do deploy no Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
 
