@@ -1,2 +1,2 @@
-/orderss http://ec2-18-229-105-100.sa-east-1.compute.amazonaws.com/orders 200
-/products http://ec2-18-229-105-100.sa-east-1.compute.amazonaws.com/products 200
+https://sds2-luciano-brum.netlify.app/orderss http://ec2-18-229-105-100.sa-east-1.compute.amazonaws.com/orders 200
+https://sds2-luciano-brum.netlify.app/products http://ec2-18-229-105-100.sa-east-1.compute.amazonaws.com/products 200
