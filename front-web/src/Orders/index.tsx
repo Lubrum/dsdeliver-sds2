@@ -43,11 +43,11 @@ function Orders() {
         }
 
         saveOrder(payload).then((response) => {
-            toast.error(`Pedido enviado com sucesso! N° ${response.data.id}`);
+            toast.info(`Pedido enviado com sucesso! N° ${response.data.id}`);
             setSelectedProducts([]);
         }).catch(() => {
-                toast.warning('Erro ao enviar pedido');
-            })
+            toast.warning('Erro ao enviar pedido');
+        })
     }
 
     return (
